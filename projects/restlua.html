@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Lua's - Portefolua</title>
+    <link rel="icon" href="../images/luafavo.png">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/styleproject.css">
+    <link rel="stylesheet" href="https://use.typekit.net/pjt7yzw.css">
+</head>
+
+<body>
+
+    <head>
+        <nav>
+            <ul>
+                <span><a href="../index.html"><img src="../images/luatelgtban.png" alt="Home button"><img
+                            src="../images/luatbangroen.png" alt=""></a></span>
+                <div>
+                    <li><a href="../mywork.html">My Work</a></li>
+                    <li><a href="../aboutme.html">About Me</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </div>
+                <div>
+                    <li><a href="https://www.instagram.com/okayllua/" target="_blank"><img
+                                src="../images/icon-instagram.png"></a>
+                    </li>
+                    <li><a href="https://open.spotify.com/user/lua.telgt" target="_blank"><img
+                                src="../images/icon-spotify.png"></a></li>
+                    <li><a href="https://www.linkedin.com/in/lua-telgt-b68886293/" target="_blank"><img
+                                src="../images/icon-linkedin.png"></a></li>
+                </div>
+            </ul>
+        </nav>
+    </head>
+    <main id="restlua">
+        <section id="top" class="combi2">
+            <a href="#" id="goBackLink"><img src="../images/fullarrowwhite.png"> Go back</a>
+            <img src="../images/restluasban.png">
+            <div>
+                <h1>Restaurant Lua's</h1>
+                <p>Web Design</p>
+                <p>December 2023</p>
+                <p>Restaurant Lua's is a one pager for a fictional Restaurant. The mission was using the
+                    works of Karel Martens and to make a sites that is recognizably him, as well as
+                    recognizably me.</p>
+            </div>
+        </section>
+        <div id="fullimg" class="hidden">
+            <button id="closebut"><img src="images/cross.png" alt=""></button>
+            <img src="images/designratrestlua.png">
+        </div>
+        <section>
+            <h2>The <span>process</span></h2>
+            <p>The process began with extensive research into who Karel Martens is and what his work entails. This was
+                followed by a period of experimentation, where various designs, ideas, and combinations were tested.
+                Several color palettes, fonts, and different works were incorporated into my own design. The assignment
+                also required creating a personal logo and icons. Karel Martens often uses bright colors, which I adore.
+                Ultimately, I developed a website that I believe distinctly reflects both Karel Martens' style and my
+                own.</p>
+            <img id="desrat" src="images/designratrestlua.png">
+        </section>
+        <div>
+            <img src="images/restluafull1.png">
+            <img src="images/restluafull2.png">
+        </div>
+
+        <a href="#top" id="backup"><img src="../images/fullarrowwhite.png" alt="">Go back up</a>
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio Version 2</p>
+            <p>Lua telgt <span>November 2023</span></p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('desrat').addEventListener('click', function () {
+            document.getElementById('fullimg').classList.remove("hidden")
+        });
+        document.getElementById('closebut').addEventListener('click', function () {
+            document.getElementById('fullimg').classList.add("hidden")
+        });
+    </script>
+    <script src="../script/backscript.js"></script>
+</body>
+
+</html>
