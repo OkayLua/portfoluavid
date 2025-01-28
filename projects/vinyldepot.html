@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinyl Depot - Portefolua</title>
+    <link rel="icon" href="../images/luafavo.png">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/styleproject.css">
+    <link rel="stylesheet" href="https://use.typekit.net/pjt7yzw.css">
+</head>
+
+<body>
+
+    <head>
+        <nav>
+            <ul>
+                <span><a href="../index.html"><img src="../images/luatelgtban.png" alt="Home button"><img
+                            src="../images/luatbangroen.png" alt=""></a></span>
+                <div>
+                    <li><a href="../mywork.html">My Work</a></li>
+                    <li><a href="../aboutme.html">About Me</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </div>
+                <div>
+                    <li><a href="https://www.instagram.com/okayllua/" target="_blank"><img
+                                src="../images/icon-instagram.png"></a>
+                    </li>
+                    <li><a href="https://open.spotify.com/user/lua.telgt" target="_blank"><img
+                                src="../images/icon-spotify.png"></a></li>
+                    <li><a href="https://www.linkedin.com/in/lua-telgt-b68886293/" target="_blank"><img
+                                src="../images/icon-linkedin.png"></a></li>
+                </div>
+            </ul>
+        </nav>
+    </head>
+    <main id="vinyldepot">
+        <section id="top" class="green">
+            <ul class="breadcrumb">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../mywork.html">My Work</a></li>
+                <li><span>Vinyl Depot</span></li>
+            </ul>
+            <a href="#" id="goBackLink"><img src="../images/arrowwhite.svg"> Go back</a>
+            <img src="images/vinyldepotban.png">
+            <h1 id="title"></h1>
+            <div>
+                <div>
+                    <p class="tag">UI Design</p>
+                    <p class="tag">Web Design</p>
+                </div>
+                <article>
+                    <p>October '24</p>
+                    <p>Vinyl depot is the first project in a line of works made for the minor Visual Interaction Design
+                        for CMD.
+                        It's a online product that helps people find new and second-hand Vinyl and accessories in a
+                        different and fun way.</p>
+                    <a href="#">Jump to project <img src="../images/fullarrowwhite.png"></a>
+                </article>
+            </div>
+        </section>
+        <section id="ovrvw">
+            <h2>Overview</h2>
+            <p>Discovering new and second-hand vinyl in a new and innovating way. </p>
+            <div>
+                <p>Vinyl depot is a new online platform that helps people discover new and second vinyl and accessories
+                    in a new way. Instead of regular catalogs full of music you can filter through hundreds of LP’s in a
+                    different way: Filter on type of vinyl case, color, quantity and mood or genre.
+                </p>
+                <br>
+                <p>
+                    The mood filter exists out of 3 scales: Emotion, Intensity and Amplification. Each combination of
+                    the three gives a new unique selection of LP’s allowing users to discover new gems that they
+                    otherwise would’ve never heard of.</p>
+            </div>
+        </section>
+        <section class="block4">
+            <article>
+                <h2>Interface <span>& Interaction</span></h2>
+                <p>The challenge for this project was finding and experimenting with different and innovating kinds of
+                    filtering and searching. A Challenge in which I would say I did a pretty good job at. Vinyl Depot is
+                    all about discovering music. Mostly based on less standard aspects of vinyl like the quantity of
+                    discs, the color of the vinyl, the mood, amplification and more.</p>
+                <br>
+                <p>It's a unique experience that more focuses on new music and new favourites than just finding a place to buy a vinyl that you already know.</p>
+            </article>
+            <article>
+                <h2>Filtering <span>& Control</span></h2>
+                <p>VinylDepot is not just any webshop. It's an experience, making online shopping for Vinyl's just as
+                    fun as in store by adding two simple elements.</p>
+                <h3>Immersive Filters</h3>
+                <p>Vinyl Depot has several unique filters that keeps users in full control while also surprising them
+                    with the results. This keeps it playful while still making sure that the users knows what is going
+                    on and feels like the are the one calling the shots.</p>
+                <h3>The store at home</h3>
+                <p>Just like in those old store, the results are indexed in a long “wall” of vinyls. Bringing that fun
+                    browsing experience right to your laptop. By using progressive disclosure it makes sure, once again,
+                    that users are in full control.</p>
+            </article>
+        </section>
+        <section class="block5">
+            <article>
+                <h2>The <span>Website</span></h2>
+                <p>Alongside the research, this project was accompanied by a prototype, showcasing most of it’s features
+                    and giving the user a good impression of the UX and the branding.
+                </p>
+                <br>
+                <p>
+                    Take a look at the site and discover all of it’s features including the filters through the
+                    following link!</p>
+                <div>
+                    <a id="button" target="_blank"
+                        href="https://xd.adobe.com/view/6d0a808a-3ea7-486a-827e-dff7d3dc634b-3859/?fullscreen"><img
+                            src="../images/fullarrowwhite.png" alt="">Go to prototype</a>
+                </div>
+            </article>
+            <div>
+                <img src="images/vindep3.png">
+                <img src="images/vindep2.png">
+                <img src="images/vindep1.png">
+            </div>
+        </section>
+        <a href="#top" id="backup"><img src="../images/fullarrowwhite.png" alt="">Go back up</a>
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio Version 3</p>
+            <p>Lua Telgt <span>November 2024</span></p>
+        </div>
+    </footer>
+    <script src="../script/backscript.js"></script>
+    <script>
+        var i = 0;
+        var txt = 'Vinyl Depot';
+        var speed = 50;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("title").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        typeWriter()
+    </script>
+</body>
+
+</html>

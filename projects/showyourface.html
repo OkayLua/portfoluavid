@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Your Face - Portefolua</title>
+    <link rel="icon" href="../images/luafavo.png">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/styleproject.css">
+    <link rel="stylesheet" href="https://use.typekit.net/pjt7yzw.css">
+</head>
+
+<body>
+
+    <head>
+        <nav>
+            <ul>
+                <span><a href="../index.html"><img src="../images/luatelgtban.png" alt="Home button"><img
+                            src="../images/luatbangroen.png" alt=""></a></span>
+                <div>
+                    <li><a href="../mywork.html">My Work</a></li>
+                    <li><a href="../aboutme.html">About Me</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </div>
+                <div>
+                    <li><a href="https://www.instagram.com/okayllua/" target="_blank"><img
+                                src="../images/icon-instagram.png"></a>
+                    </li>
+                    <li><a href="https://open.spotify.com/user/lua.telgt" target="_blank"><img
+                                src="../images/icon-spotify.png"></a></li>
+                    <li><a href="https://www.linkedin.com/in/lua-telgt-b68886293/" target="_blank"><img
+                                src="../images/icon-linkedin.png"></a></li>
+                </div>
+            </ul>
+        </nav>
+    </head>
+    <main id="">
+        <section id="top" class="blue">
+            <ul class="breadcrumb">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../mywork.html">My Work</a></li>
+                <li><span>Show Your Face</span></li>
+            </ul>
+            <a href="#" id="goBackLink"><img src="../images/arrowwhite.svg"> Go back</a>
+            <img src="images/showyourfaceban.jpg">
+            <h1 id="title"></h1>
+            <div>
+                <div>
+                    <p class="tag">Research</p>
+                    <p class="tag">Web Design</p>
+                </div>
+                <article>
+                    <p>Ocotober '24</p>
+                    <p>Show Your Face is another project from the minor Visual Interface Design at the University of
+                        Applied Sciences Amsterdam. In this class we delved deeper into typography and made a site for a
+                        choosen font. In my case Frutiger.</p>
+                    <a href="#">Jump to site <img src="../images/fullarrowwhite.png"></a>
+                </article>
+            </div>
+        </section>
+        <section id="ovrvw">
+            <h2>Overview</h2>
+            <p>Learning about typography and giving a font an identity.</p>
+            <div>
+                <p>For this project I first went out on the streets and took pictures of font's that spoke to me. For
+                    these series of photo's I had a theme in mind, Fonts used in public transport.
+                </p>
+                <br>
+                <p>
+                    After collecting and analysing all photo's, I realised that most of them had one thing in common:
+                    Wheter is was the Amsterdam Metro System, the Rotterdam Metro System, my local bus or the NS; Most
+                    of them used the same font, It was either fruitger or an adaptation of frutiger.</p>
+            </div>
+        </section>
+        <section class="block2">
+            <div>
+                <h2>About <span>the project</span></h2>
+                <p>After thoroughly researching Frutiger and his font, it was time to put my knowledge to work and
+                    create a website with fitting identity for the font, or well Show My Face.
+                </p>
+                <h3>Why Frutiger?</h3>
+                <p>I've been a huge fan of public transport for the longest time, Especially trains. Which is why I
+                    picked it as my topic for the photos. Frutiger is used by a lot of instances for its great
+                    legibility while still having a open en inviting feel. It's a typeface originally made for the
+                    Charles de Gaulle</p>
+                <h3>The website</h3>
+                <p>For the website I wanted to created a very simple and clean look, Representing the usage of the face.
+                    For this I took elements usage in signage from Schiphol Airport (where they also used Frutiger) and
+                    the colors from Nessie, The design system from NS. Combining this resulted in a fun but a still very
+                    clean design showcasing the history and different aspects of the Frutiger Typeface. </p>
+            </div>
+            <img src="images/typo2.png">
+            <img src="images/typo1.png">
+        </section>
+        <section class="block1">
+            <h2>The <span>site</span></h2>
+            <p>The site was made in Framer, A tool that I am trying to get more familiar with so I thought it would be a
+                nice challenge to try it! It ended up working pretty well and the website is up and running. You can take a look at it throught the link below.</p>
+            <a id="button" target="_blank"
+                href="https://luatfrutigervid.framer.website/"><img
+                    src="../images/fullarrowwhite.png" alt="">Go to website</a>
+            <img src="images/typo3.png" alt="">
+        </section>
+
+        <a href="#top" id="backup"><img src="../images/fullarrowwhite.png" alt="">Go back up</a>
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio Version 3</p>
+            <p>Lua Telgt <span>November 2024</span></p>
+        </div>
+    </footer>
+    <script src="../script/backscript.js"></script>
+    <script>
+        var i = 0;
+        var txt = 'Show Your Face';
+        var speed = 50;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("title").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        typeWriter()
+    </script>
+</body>
+
+</html>

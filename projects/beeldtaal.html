@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beeldtaal - Portefolua</title>
+    <link rel="icon" href="../images/luafavo.png">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/styleproject.css">
+    <link rel="stylesheet" href="https://use.typekit.net/pjt7yzw.css">
+</head>
+
+<body>
+
+    <head>
+        <nav>
+            <ul>
+                <span><a href="../index.html"><img src="../images/luatelgtban.png" alt="Home button"><img
+                            src="../images/luatbangroen.png" alt=""></a></span>
+                <div>
+                    <li><a href="../mywork.html">My Work</a></li>
+                    <li><a href="../aboutme.html">About Me</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </div>
+                <div>
+                    <li><a href="https://www.instagram.com/okayllua/" target="_blank"><img
+                                src="../images/icon-instagram.png"></a>
+                    </li>
+                    <li><a href="https://open.spotify.com/user/lua.telgt" target="_blank"><img
+                                src="../images/icon-spotify.png"></a></li>
+                    <li><a href="https://www.linkedin.com/in/lua-telgt-b68886293/" target="_blank"><img
+                                src="../images/icon-linkedin.png"></a></li>
+                </div>
+            </ul>
+        </nav>
+    </head>
+    <main id="beeldtaal">
+        <section id="top" class="yellow">
+            <ul class="breadcrumb">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../mywork.html">My Work</a></li>
+                <li><span>Beeldtaal</span></li>
+            </ul>
+            <a href="#" id="goBackLink"><img src="../images/arrowwhite.svg"> Go back</a>
+            <img src="images/beeldtaalban.png">
+            <h1 id="title"></h1>
+            <div>
+                <div>
+                    <p class="tag">Research</p>
+                    <p class="tag">Graphic Design</p>
+                </div>
+                <article>
+                    <p>Ocotober '24 | CW: Mentions of Suicide</p>
+                    <p>A short class (1.5 weeks) in which the focus was put on understanding object placement in visual content. A class in which we studied the manipulation of imagery by focusing on Rhetorics, Semiotics & Gestalt</p>
+                    <a href="#">Jump to project <img src="../images/fullarrowwhite.png"></a>
+                </article>
+            </div>
+        </section>
+        <section id="ovrvw">
+            <h2>Overview</h2>
+            <p>Seeing visual elements in a new light: A dip into Rhetorics, Semiotics & Gestalt.</p>
+            <div>
+                <p>ClubSafe is dedicated to improving the safety of students and young adults in clubbing environments.
+                    Through a comprehensive approach, the organization promotes responsible behavior, implements safety
+                    protocols, and provides resources for informed decision-making. By addressing the unique challenges
+                    of this demographic, ClubSafe plays a crucial role in fostering a secure and enjoyable nightlife
+                    experience.
+                </p>
+            </div>
+        </section>
+        <section class="block2 ">
+            <div>
+                <h2>Starting <span>Projects</span></h2>
+                <p>For the site, I wanted to use a scroll-jacking technique to not only present information in a
+                    progressive disclosure manner but also to make the site more interesting and interactive. Next to
+                    this addition I also added 2 "exercises" in which readers can bring their own input to the table.
+                </p>
+                <h3>Semiotiek Light</h3>
+                <p>In the first element users are presented with two conversations. In it's core, the two conversations
+                    are the same. The only difference between them is the language used. Users can interact by picking
+                    the conversation they feel is the most human and get feedback on their choice.</p>
+                <h3>Visual Rhetorics</h3>
+                <p>This element gives the user a qoute with 2 words that they can change by clicking on the words. Users
+                    will actively change language in this exercise. The word "depression" will be changed into "a sad
+                    and empty feeling" and "social-anxiety" will be changed into "behaviour and emotions when going
+                    outside". Showcasing how easy it is to impactfully change your language.</p>
+            </div>
+            <img src="images/beeldtaal1.png">
+            <img src="images/neglectv3.png">
+        </section>
+        <div id="fullimg" class="hidden">
+            <button id="closebut"><img src="images/cross.png" alt=""></button>
+            <img src="images/Ikbennietoke2.png">
+        </div>
+        <section class="block1">
+            <h2>Final <span>Project</span></h2>
+            <p>The process began with extensive research into who Karel Martens is and what his work entails. This was
+                followed by a period of experimentation, where various designs, ideas, and combinations were tested.
+                Several color palettes, fonts, and different works were incorporated into my own design. The assignment
+                also required creating a personal logo and icons. Karel Martens often uses bright colors, which I adore.
+                Ultimately, I developed a website that I believe distinctly reflects both Karel Martens' style and my
+                own.</p>
+            <img id="desrat" src="images/Ikbennietoke2.png">
+        </section>
+
+        <a href="#top" id="backup"><img src="../images/fullarrowwhite.png" alt="">Go back up</a>
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio Version </p>
+            <p>Lua Telgt <span>November 2024</span></p>
+        </div>
+    </footer>
+    <script src="../script/backscript.js"></script>
+    <script>
+        const desratButton = document.getElementById('desrat');
+        const closeButton = document.getElementById('closebut');
+        const fullImg = document.getElementById('fullimg');
+
+        desratButton.addEventListener('click', function () {
+            toggleVisibility(fullImg);
+        });
+
+        closeButton.addEventListener('click', function () {
+            toggleVisibility(fullImg);
+        });
+
+        function toggleVisibility(element) {
+            if (element.classList.contains('hidden')) {
+                element.classList.remove('hidden');
+                element.classList.add('visible');
+            } else {
+                element.classList.remove('visible');
+                element.classList.add('hidden');
+            }
+        }
+    </script>
+        <script>
+            var i = 0;
+            var txt = 'Beeldtaal';
+            var speed = 50;
+    
+            function typeWriter() {
+                if (i < txt.length) {
+                    document.getElementById("title").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                }
+            }
+            typeWriter()
+        </script>
+</body>
+
+</html>

@@ -36,15 +36,54 @@
         </nav>
     </head>
     <main id="mensver">
-        <section id="top" class="combi3">
+        <!-- <section id="top" class="combi3">
             <a href="#" id="goBackLink"><img src="../images/fullarrowwhite.png"> Go back</a>
             <img src="../images/mensenverhalenban.png">
             <div>
                 <h1>Mensen Verhalen</h1>
                 <p>Exposition & Storytelling</p>
                 <p>April 2023</p>
-                <p>'Mensen Verhalen' is something completely different; It's an prototype exhibition i set up together
+                <p>'Mensen Verhalen' is something completely different; It's an prototype exhibition I set up together
                     with Lanxiang Vermeulen & Vivanne Hoogendam.</p>
+            </div>
+        </section> -->
+        <section id="top" class="green">
+            <ul class="breadcrumb">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../mywork.html">My Work</a></li>
+                <li><span>Mensen Verhalen</span></li>
+            </ul>
+            <a href="#" id="goBackLink"><img src="../images/arrowwhite.svg"> Go back</a>
+            <img src="../images/mensenverhalenban.png">
+            <h1 id="title"></h1>
+            <div>
+                <div>
+                    <p class="tag">Exposition</p>
+                    <p class="tag">Storytelling</p>
+                </div>
+                <article>
+                    <p>April '23</p>
+                    <p>'Mensen Verhalen' is something completely different; It's an prototype exhibition I set up together
+                        with Lanxiang Vermeulen & Vivanne Hoogendam. </p>
+                    <a href="#">Jump to project <img src="../images/fullarrowwhite.png"></a>
+                </article>
+            </div>
+        </section>
+        <section id="ovrvw">
+            <h2>Overview</h2>
+            <p>Convincing people to read more by bringing their reading stories to life.</p>
+            <div>
+                <p>ClubSafe is dedicated to improving the safety of students and young adults in clubbing environments.
+                    Through a comprehensive approach, the organization promotes responsible behavior, implements safety
+                    protocols, and provides resources for informed decision-making. By addressing the unique challenges
+                    of this demographic, ClubSafe plays a crucial role in fostering a secure and enjoyable nightlife
+                    experience.
+                </p>
+                <br>
+                <p>
+                    ClubSafe is a Non-profit organisation funded by the Dutch Ministry of Health, Welfare & Sport. In
+                    addition to a dedicated core team comprising dozens of individuals, numerous volunteers contribute
+                    daily to enhance the safety of the nightlife, making it a better experience for everyone.</p>
             </div>
         </section>
         <section>
@@ -91,11 +130,25 @@
     </main>
     <footer>
         <div>
-            <p>Portfolio Version 2</p>
-            <p>Lua telgt <span>November 2023</span></p>
+            <p>Portfolio Version 3</p>
+            <p>Lua Telgt <span>November 2024</span></p>
         </div>
     </footer>
     <script src="../script/backscript.js"></script>
+    <script>
+        var i = 0;
+        var txt = 'Mensen Verhalen';
+        var speed = 50;
+        
+        function typeWriter() {
+          if (i < txt.length) {
+            document.getElementById("title").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+        typeWriter()
+        </script>
 </body>
 
 </html>
